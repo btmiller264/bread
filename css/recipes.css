@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+}
+
+.focaccia {
+  background-image: url(/images/foc.jpg);
+  background-size: auto;
+}
+
+.wheat {
+  background-image: url(/images/wheat.jpg);
+  background-size: auto;
+}
+
+.overlay {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  height: auto;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  background: rgba(128,128,128, 0.6); 
+  padding: 10px;
+}
+
+.title p {
+  font-size: 0.8em;
+}
+
+.title a {
+  color: black;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  flex: 1 1 0;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ingredients li {
+  font-size: 1.5em;
+}
+
+.wheatdirections,
+.directions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  flex: 1 1 0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 961px) {
+  .recipe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row;
+    width: 100%;
+  }
+  
+  .pic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .pic img {
+    max-width: 500px;
+  }
+
+  .directions li {
+    font-size: 1.05em;
+    padding: 5px;
+  }
+
+  .wheatdirections li {
+    font-size: 1.4em;
+    padding: 5px;
+  }
+
+}
+
+@media only screen and (min-width: 427px) and (max-width: 960px) { 
+  .recipe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 100%;
+  }
+  
+  .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .pic img {
+    max-width: 700px;
+  }
+
+  .directions li {
+    font-size: 1.05em;
+    padding: 5px;
+  }
+
+  .wheatdirections li {
+    font-size: 1.4em;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .recipe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 100%;
+  }
+  
+  .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .pic img {
+    max-width: 300px;
+  }
+
+  .directions li {
+    padding: 5px;
+  }
+
+  .wheatdirections li {
+    font-size: 1.2em;
+    padding: 5px;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}

@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: black;
+}
+
+.tips {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  flex: 1 1 0;
+  padding: 10px;
+  color: white;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex: 1 1 0;
+  padding: 10px;
+  height: 100%;
+}
+
+.list li {
+  padding: 5px;
+}
+
+@media only screen and (min-width: 961px) {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row;
+    height: auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .picture img {
+    max-width: 600px;
+  }
+  
+}
+
+@media only screen and (min-width: 427px) and (max-width: 960px) { 
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+    height: auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .picture img {
+    max-width: 600px;
+  }
+  
+}
+
+@media only screen and (max-width: 426px) {
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+    height: auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .picture img {
+    max-width: 400px;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
